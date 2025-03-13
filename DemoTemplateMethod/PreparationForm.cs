@@ -21,7 +21,7 @@ namespace DemoTemplateMethod
 
         private void InitializeUI()
         {
-            this.ClientSize = new Size(900, 600);  // Adjust as needed
+            this.ClientSize = new Size(900, 600);  
             this.Text = "Preparation Steps";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
