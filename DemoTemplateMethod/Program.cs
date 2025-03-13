@@ -13,7 +13,7 @@ namespace DemoTemplateMethod
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm()); // Start with the MainForm
+            Application.Run(new Preparation()); // Start with the MainForm
         }
     }
 }

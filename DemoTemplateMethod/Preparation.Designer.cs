@@ -36,7 +36,7 @@
             nav2.Dock = DockStyle.Fill;
             nav2.Location = new Point(0, 0);
             nav2.Name = "nav2";
-            nav2.Size = new Size(1202, 576);
+            nav2.Size = new Size(1129, 550);
             nav2.TabIndex = 1;
             nav2.Load += nav2_Load;
             // 
@@ -45,7 +45,7 @@
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1202, 576);
+            ClientSize = new Size(1129, 550);
             Controls.Add(nav2);
             Name = "Preparation";
             Text = "Preparation";
