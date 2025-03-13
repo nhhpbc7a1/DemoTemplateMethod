@@ -7,7 +7,7 @@
         {
             Name = "Bubble Tea";
             Description = "Delicious black tea with milk and tapioca pearls";
-            MenuImagePath = "images/tea_menu.png";
+            MenuImagePath = ImagePathHelper.GetImagePath("tea_menu.jpg");
         }
 
         protected override void PrepareIngredients()
@@ -41,11 +41,11 @@
         {
             return new string[]
             {
-                "images/tea_step1.png",
-                "images/tea_step2.png",
-                "images/tea_step3.png",
-                "images/tea_step4.png",
-                "images/tea_step5.png"
+                ImagePathHelper.GetImagePath("tea_step1.jpg"),
+                ImagePathHelper.GetImagePath("tea_step2.jpg"),
+                ImagePathHelper.GetImagePath("tea_step3.jpg"),
+                ImagePathHelper.GetImagePath("tea_step4.jpg"),
+                ImagePathHelper.GetImagePath("tea_step5.jpg"),
             };
         }
     }

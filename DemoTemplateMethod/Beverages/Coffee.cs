@@ -7,7 +7,7 @@
         {
             Name = "Coffee with Milk";
             Description = "Traditional coffee with condensed milk";
-            MenuImagePath = "images/coffee_menu.png";
+            MenuImagePath = ImagePathHelper.GetImagePath("coffee_menu.jpg");
         }
 
         protected override void PrepareIngredients()
@@ -46,11 +46,11 @@
         {
             return new string[]
             {
-                "images/coffee_step1.png",
-                "images/coffee_step2.png",
-                "images/coffee_step3.png",
-                "images/coffee_step4.png",
-                "images/coffee_step5.png"
+                ImagePathHelper.GetImagePath("coffee_step1.jpg"),
+                ImagePathHelper.GetImagePath("coffee_step2.jpg"),
+                ImagePathHelper.GetImagePath("coffee_step3.jpg"),
+                ImagePathHelper.GetImagePath("coffee_step4.jpg"),
+                ImagePathHelper.GetImagePath("coffee_step5.jpg"),
             };
         }
     }

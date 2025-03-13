@@ -7,7 +7,7 @@
         {
             Name = "Strawberry Smoothie";
             Description = "Fresh strawberry smoothie with yogurt and honey";
-            MenuImagePath = "images/smoothie_menu.png";
+            MenuImagePath = ImagePathHelper.GetImagePath("smoothie_menu.jpg");
         }
 
         protected override void PrepareIngredients()
@@ -41,11 +41,11 @@
         {
             return new string[]
             {
-                "images/smoothie_step1.png",
-                "images/smoothie_step2.png",
-                "images/smoothie_step3.png",
-                "images/smoothie_step4.png",
-                "images/smoothie_step5.png"
+                ImagePathHelper.GetImagePath("smoothie_step1.jpg"),
+                ImagePathHelper.GetImagePath("smoothie_step2.jpg"),
+                ImagePathHelper.GetImagePath("smoothie_step3.jpg"),
+                ImagePathHelper.GetImagePath("smoothie_step4.jpg"),
+                ImagePathHelper.GetImagePath("smoothie_step5.jpg"),
             };
         }
     }

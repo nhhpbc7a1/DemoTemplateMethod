@@ -33,7 +33,7 @@ namespace DemoTemplateMethod
             {
                 Width = 400,
                 Height = 400,
-                Location = new Point(20, 20),
+                Location = new Point(20, 40),
                 BorderStyle = BorderStyle.FixedSingle,
                 SizeMode = PictureBoxSizeMode.Zoom
             };
@@ -43,7 +43,7 @@ namespace DemoTemplateMethod
                 Text = "Step 1/5",
                 Font = new Font("Arial", 16, FontStyle.Bold),
                 TextAlign = ContentAlignment.MiddleCenter,
-                Location = new Point(440, 20),
+                Location = new Point(440, 40),
                 Size = new Size(430, 40)
             };
 
@@ -51,7 +51,7 @@ namespace DemoTemplateMethod
             {
                 Font = new Font("Arial", 12),
                 TextAlign = ContentAlignment.TopLeft,
-                Location = new Point(440, 60),
+                Location = new Point(440, 80),
                 Size = new Size(430, 340)
             };
 
@@ -60,7 +60,7 @@ namespace DemoTemplateMethod
                 Text = "< Previous",
                 Width = 100,
                 Height = 40,
-                Location = new Point(220, 440) //Adjust to be relative to the image panel
+                Location = new Point(220, 460) //Adjust to be relative to the image panel
             };
 
             nextButton = new Button
@@ -68,14 +68,14 @@ namespace DemoTemplateMethod
                 Text = "Next >",
                 Width = 100,
                 Height = 40,
-                Location = new Point(340, 440)  //Adjust to be relative to the image panel
+                Location = new Point(340, 460)  //Adjust to be relative to the image panel
             };
             backToMenuButton = new Button
             {
                 Text = "Back to Menu",
                 Width = 120,
                 Height = 30,
-                Location = new Point(20, 5)
+                Location = new Point(0, 0)
             };
 
             backToMenuButton.Click += (sender, e) => {

@@ -67,6 +67,7 @@ namespace DemoTemplateMethod
             int index = 0;
             foreach (var beverage in beverages)
             {
+                //MessageBox.Show(beverage.MenuImagePath);
                 Panel beverageItem = CreateBeveragePanel(beverage, index);
                 beverageLayout.Controls.Add(beverageItem);
                 index++;
@@ -95,8 +96,22 @@ namespace DemoTemplateMethod
                 BorderStyle = BorderStyle.FixedSingle
             };
 
+            // Load the image from the file path
+            try
+            {
+                pictureBox.Image = Image.FromFile(beverage.MenuImagePath);
+                
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception if the image file is not found
+                //MessageBox.Show($"Error loading image: {beverage.MenuImagePath}");
+                //MessageBox.Show(System.IO.Path.GetDirectoryName(Application.ExecutablePath));
+                pictureBox.BackColor = Color.LightGray; // Set a default background color in case of error
+            }
+
             // Temporarily use color to replace image
-            pictureBox.BackColor = index == 0 ? Color.Brown : (index == 1 ? Color.DarkOrange : Color.Pink);
+            //pictureBox.BackColor = index == 0 ? Color.Brown : (index == 1 ? Color.DarkOrange : Color.Pink);
 
             // Create beverage name label
             Label nameLabel = new Label
