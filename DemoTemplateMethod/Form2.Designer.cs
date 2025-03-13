@@ -47,10 +47,10 @@ namespace DemoTemplateMethod
             // lblBeverage
             // 
             lblBeverage.AutoSize = true;
-            lblBeverage.Font = new Font("Cooper Black", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBeverage.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBeverage.Location = new Point(336, 26);
             lblBeverage.Name = "lblBeverage";
-            lblBeverage.Size = new Size(317, 36);
+            lblBeverage.Size = new Size(344, 42);
             lblBeverage.TabIndex = 0;
             lblBeverage.Text = "BEVERAGE MENU";
             lblBeverage.Click += label1_Click;
@@ -72,6 +72,7 @@ namespace DemoTemplateMethod
             // ucBeverageItem6
             // 
             ucBeverageItem6.Location = new Point(624, 341);
+            ucBeverageItem6.Margin = new Padding(3, 4, 3, 4);
             ucBeverageItem6.Name = "ucBeverageItem6";
             ucBeverageItem6.Size = new Size(292, 341);
             ucBeverageItem6.TabIndex = 5;
@@ -79,6 +80,7 @@ namespace DemoTemplateMethod
             // ucBeverageItem5
             // 
             ucBeverageItem5.Location = new Point(315, 341);
+            ucBeverageItem5.Margin = new Padding(3, 4, 3, 4);
             ucBeverageItem5.Name = "ucBeverageItem5";
             ucBeverageItem5.Size = new Size(292, 341);
             ucBeverageItem5.TabIndex = 4;
@@ -86,6 +88,7 @@ namespace DemoTemplateMethod
             // ucBeverageItem4
             // 
             ucBeverageItem4.Location = new Point(3, 341);
+            ucBeverageItem4.Margin = new Padding(3, 4, 3, 4);
             ucBeverageItem4.Name = "ucBeverageItem4";
             ucBeverageItem4.Size = new Size(292, 341);
             ucBeverageItem4.TabIndex = 3;
@@ -93,6 +96,7 @@ namespace DemoTemplateMethod
             // ucBeverageItem3
             // 
             ucBeverageItem3.Location = new Point(624, 3);
+            ucBeverageItem3.Margin = new Padding(3, 4, 3, 4);
             ucBeverageItem3.Name = "ucBeverageItem3";
             ucBeverageItem3.Size = new Size(292, 341);
             ucBeverageItem3.TabIndex = 2;
@@ -100,6 +104,7 @@ namespace DemoTemplateMethod
             // ucBeverageItem2
             // 
             ucBeverageItem2.Location = new Point(315, 3);
+            ucBeverageItem2.Margin = new Padding(3, 4, 3, 4);
             ucBeverageItem2.Name = "ucBeverageItem2";
             ucBeverageItem2.Size = new Size(292, 341);
             ucBeverageItem2.TabIndex = 1;
@@ -107,13 +112,14 @@ namespace DemoTemplateMethod
             // ucBeverageItem1
             // 
             ucBeverageItem1.Location = new Point(3, 3);
+            ucBeverageItem1.Margin = new Padding(3, 4, 3, 4);
             ucBeverageItem1.Name = "ucBeverageItem1";
             ucBeverageItem1.Size = new Size(292, 341);
             ucBeverageItem1.TabIndex = 0;
             // 
             // MainInterface
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 178, 140);
             ClientSize = new Size(1000, 788);

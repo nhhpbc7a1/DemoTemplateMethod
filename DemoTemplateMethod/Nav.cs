@@ -12,15 +12,18 @@ namespace DemoTemplateMethod
 {
     public partial class Nav : UserControl
     {
+        private PictureBox gifBox;
         public Nav()
         {
             InitializeComponent();
             this.Load += Nav_Load;
+
         }
 
         private void Nav_Load(object sender, EventArgs e)
         {
             AssignHoverEvents(this);
+            LoadGif();
         }
         private void AssignHoverEvents(Control parent)
         {
@@ -51,6 +54,20 @@ namespace DemoTemplateMethod
         private void Button_MouseLeave(object sender, EventArgs e)
         {
             ((Button)sender).BackColor = Color.FromArgb(35, 40, 45);
+        }
+        private void LoadGif()
+        {
+            // Tạo PictureBox chứa GIF
+            gifBox = new PictureBox
+            {
+                SizeMode = PictureBoxSizeMode.StretchImage,
+                Dock = DockStyle.Fill, // Chỉnh Dock nếu cần
+                Image = Image.FromFile("C:/Users/ToanKhoa/Downloads/giphy.gif") // Đặt đường dẫn ảnh GIF
+            };
+
+            // Thêm vào UserControl
+            this.Controls.Add(gifBox);
+            gifBox.BringToFront(); // Đưa lên trên cùng
         }
 
     }

@@ -170,7 +170,6 @@
             btnBrew.TabIndex = 0;
             btnBrew.Text = "Step2 : Main ingredient preparation";
             btnBrew.UseVisualStyleBackColor = true;
-      
             // 
             // panel5
             // 
@@ -193,7 +192,6 @@
             btnPrepare.Text = "Step1 : Prepare ingredients and tools";
             btnPrepare.UseVisualStyleBackColor = true;
             btnPrepare.Click += btnPrepare_Click;
-       
             // 
             // panel3
             // 
@@ -313,6 +311,7 @@
             pbImage.Size = new Size(743, 447);
             pbImage.TabIndex = 3;
             pbImage.TabStop = false;
+
             // 
             // Nav
             // 
