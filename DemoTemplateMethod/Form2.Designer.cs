@@ -41,10 +41,10 @@ namespace DemoTemplateMethod
             // lblBeverage
             // 
             lblBeverage.AutoSize = true;
-            lblBeverage.Font = new Font("Cooper Black", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBeverage.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBeverage.Location = new Point(336, 26);
             lblBeverage.Name = "lblBeverage";
-            lblBeverage.Size = new Size(317, 36);
+            lblBeverage.Size = new Size(344, 42);
             lblBeverage.TabIndex = 0;
             lblBeverage.Text = "BEVERAGE MENU";
             // 
@@ -58,7 +58,7 @@ namespace DemoTemplateMethod
             // 
             // MainInterface
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 178, 140);
             ClientSize = new Size(1000, 875);
