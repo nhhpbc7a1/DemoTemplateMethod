@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using DemoTemplateMethod.Beverages;
+using System.Diagnostics;
 
 namespace DemoTemplateMethod
 {
@@ -16,7 +17,48 @@ namespace DemoTemplateMethod
             InitializeUI();
             this.beverage = beverage;
             InitializePreparationPanel();
-            UpdateStepDisplay();
+            beverage.Prepare();
+            UpdateStepDisplay(); // Initial call to set the correct initial values of images and description before it loads.
+            //base.OnLoad(e);
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+             //Call to prepare 
+        }
+
+        //New Local var
+        private string stepDescription = string.Empty;
+        // string stepImage = string.Empty;
+
+        //Updated method for moving and triggering functions
+        //NOTE this update will pull information local, and not from prepare()
+        private void UpdateStepDisplay()
+        {
+
+
+            stepNumberLabel.Text = $"Step {currentStep + 1}/{beverage.StepDescriptions.Count}";
+
+            List<string> stepImagePaths = beverage.StepImages;
+
+
+            try
+            {
+                //Lets try and set the image to what we hope to find based on name.
+                // stepImage.Image = Image.FromFile(stepImage);
+                stepDescriptionLabel.Text = beverage.StepDescriptions[currentStep];
+                stepImage.Image = Image.FromFile(beverage.StepImages[currentStep]);
+
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception as necessary:
+                Console.WriteLine("Unable to load image: " + ex.Message);
+            }
+
+            prevButton.Enabled = (currentStep > 0);
+            nextButton.Enabled = (currentStep < beverage.StepDescriptions.Count - 1);
+
         }
 
         private void InitializeUI()
@@ -106,54 +148,35 @@ namespace DemoTemplateMethod
         {
             // You can initialize here common properties like background color, padding
         }
-
+        //Movements
         private void NextButton_Click(object sender, EventArgs e)
         {
-            if (currentStep < beverage.GetStepDescriptions().Length - 1)
-            {
-                currentStep++;
-                UpdateStepDisplay();
-            }
+            //call a method to proceed
+            UpdateStep("Next");
         }
 
         private void PrevButton_Click(object sender, EventArgs e)
         {
-            if (currentStep > 0)
-            {
-                currentStep--;
-                UpdateStepDisplay();
-            }
+            // call a method to reverse
+            UpdateStep("Prev");
         }
-        private void UpdateStepDisplay()
+        //Movements with validation
+        private void UpdateStep(string direction)
         {
-            string[] stepDescriptions = beverage.GetStepDescriptions();
-            string[] stepImagePaths = beverage.GetStepImagePaths();
-
-            stepNumberLabel.Text = $"Step {currentStep + 1}/{stepDescriptions.Length}";
-            stepDescriptionLabel.Text = stepDescriptions[currentStep];
-            // Set text wrapping
-            stepDescriptionLabel.AutoSize = true;
-            stepDescriptionLabel.MaximumSize = new Size(430, 0);
-            if (stepImagePaths != null && stepImagePaths.Length > currentStep)
+            if (direction == "Next")
             {
-                try
-                {
-                    stepImage.Image = Image.FromFile(stepImagePaths[currentStep]);
-                }
-                catch (Exception ex)
-                {
-                    // Handle the exception as necessary:
-                    Console.WriteLine("Unable to load image: " + ex.Message);
-                }
+                if (beverage.StepDescriptions.Count > currentStep + 1)
+                    currentStep++;
 
             }
             else
             {
-                stepImage.Image = null; // or some default image
+                if (currentStep > 0)
+                    currentStep--;
+
             }
 
-            prevButton.Enabled = (currentStep > 0);
-            nextButton.Enabled = (currentStep < stepDescriptions.Length - 1);
+            UpdateStepDisplay(); //Now lets call for it to happen
 
         }
     }

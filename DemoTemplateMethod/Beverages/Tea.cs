@@ -1,8 +1,11 @@
-﻿namespace DemoTemplateMethod.Beverages
+﻿using System;
+
+namespace DemoTemplateMethod.Beverages
 {
-    // Class Tea
     public class Tea : Beverage
     {
+        private int currentStep = 0;
+
         public Tea()
         {
             Name = "Bubble Tea";
@@ -12,41 +15,62 @@
 
         protected override void PrepareIngredients()
         {
-            // Specific implementation for tea
+            CurrentStepDescription = "Prepare: Black tea, milk, tapioca pearls, glass and tools";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step1.jpg");
+            // Thực hiện logic chuẩn bị nguyên liệu
         }
 
         protected override void BrewMainIngredient()
         {
-            // Brew black tea
+            CurrentStepDescription = "Brew tea: Steep tea in hot water for about 3-5 minutes";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step2.jpg");
+            // Thực hiện logic pha trà
         }
 
         protected override void AddCustomIngredients()
         {
-            // Add milk and tapioca pearls
+            CurrentStepDescription = "Add ingredients: Add cooked tapioca pearls to the glass, then add milk";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step3.jpg");
+            // Thực hiện logic thêm nguyên liệu
         }
 
-        public override string[] GetStepDescriptions()
+        protected override void FinishAndDecorate()
         {
-            return new string[]
-            {
-                "Prepare: Black tea, milk, tapioca pearls, glass and tools",
-                "Brew tea: Steep tea in hot water for about 3-5 minutes",
-                "Add ingredients: Add cooked tapioca pearls to the glass, then add milk",
-                "Finish: Shake well or stir the mixture",
-                "Serve: Add ice and enjoy with a large straw"
-            };
+            CurrentStepDescription = "Finish: Shake well or stir the mixture";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step4.jpg");
+            // Thực hiện logic hoàn thiện
         }
 
-        public override string[] GetStepImagePaths()
+        protected override void Serve()
         {
-            return new string[]
-            {
-                ImagePathHelper.GetImagePath("tea_step1.jpg"),
-                ImagePathHelper.GetImagePath("tea_step2.jpg"),
-                ImagePathHelper.GetImagePath("tea_step3.jpg"),
-                ImagePathHelper.GetImagePath("tea_step4.jpg"),
-                ImagePathHelper.GetImagePath("tea_step5.jpg"),
-            };
+            CurrentStepDescription = "Serve: Add ice and enjoy with a large straw";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step5.jpg");
+            // Thực hiện logic phục vụ
         }
+
+        // Các phương thức này có thể giữ lại để tham khảo hoặc xóa đi nếu không cần
+        //public override string[] GetStepDescriptions()
+        //{
+        //    return new string[]
+        //    {
+        //        "Prepare: Black tea, milk, tapioca pearls, glass and tools",
+        //        "Brew tea: Steep tea in hot water for about 3-5 minutes",
+        //        "Add ingredients: Add cooked tapioca pearls to the glass, then add milk",
+        //        "Finish: Shake well or stir the mixture",
+        //        "Serve: Add ice and enjoy with a large straw"
+        //    };
+        //}
+
+        //public override string[] GetStepImagePaths()
+        //{
+        //    return new string[]
+        //    {
+        //        ImagePathHelper.GetImagePath("tea_step1.jpg"),
+        //        ImagePathHelper.GetImagePath("tea_step2.jpg"),
+        //        ImagePathHelper.GetImagePath("tea_step3.jpg"),
+        //        ImagePathHelper.GetImagePath("tea_step4.jpg"),
+        //        ImagePathHelper.GetImagePath("tea_step5.jpg"),
+        //    };
+        //}
     }
 }

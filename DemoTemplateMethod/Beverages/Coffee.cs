@@ -1,4 +1,6 @@
-﻿namespace DemoTemplateMethod.Beverages
+﻿using System;
+
+namespace DemoTemplateMethod.Beverages
 {
     // Class Coffee
     public class Coffee : Beverage
@@ -12,46 +14,38 @@
 
         protected override void PrepareIngredients()
         {
-            // Specific implementation for coffee
+            CurrentStepDescription = "Prepare: Coffee filter, glass, ground coffee, and condensed milk";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step1.jpg");
+            // Thực hiện logic chuẩn bị nguyên liệu
         }
 
         protected override void BrewMainIngredient()
         {
-            // Brew coffee using a phin filter
+            CurrentStepDescription = "Brew coffee: Add coffee to the filter, pour hot water and wait for it to drip";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step2.jpg");
+            // Thực hiện logic pha trà
         }
 
         protected override void AddCustomIngredients()
         {
-            // Add condensed milk
+            CurrentStepDescription = "Add ingredients: Add 2 spoons of condensed milk to the bottom of the glass";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step3.jpg");
+            // Thực hiện logic thêm nguyên liệu
         }
 
         protected override void FinishAndDecorate()
         {
-            // Stir well and decorate
+            CurrentStepDescription = "Finish: Stir the condensed milk and coffee mixture well";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step4.jpg");
+            // Thực hiện logic hoàn thiện
         }
 
-        public override string[] GetStepDescriptions()
+        protected override void Serve()
         {
-            return new string[]
-            {
-                "Prepare: Coffee filter, glass, ground coffee, and condensed milk",
-                "Brew coffee: Add coffee to the filter, pour hot water and wait for it to drip",
-                "Add ingredients: Add 2 spoons of condensed milk to the bottom of the glass",
-                "Finish: Stir the condensed milk and coffee mixture well",
-                "Serve: Add ice (optional) and enjoy"
-            };
+            CurrentStepDescription = "Serve: Add ice (optional) and enjoy";
+            CurrentStepImage = ImagePathHelper.GetImagePath("tea_step5.jpg");
+            // Thực hiện logic phục vụ
         }
 
-        public override string[] GetStepImagePaths()
-        {
-            return new string[]
-            {
-                ImagePathHelper.GetImagePath("coffee_step1.jpg"),
-                ImagePathHelper.GetImagePath("coffee_step2.jpg"),
-                ImagePathHelper.GetImagePath("coffee_step3.jpg"),
-                ImagePathHelper.GetImagePath("coffee_step4.jpg"),
-                ImagePathHelper.GetImagePath("coffee_step5.jpg"),
-            };
-        }
     }
 }
