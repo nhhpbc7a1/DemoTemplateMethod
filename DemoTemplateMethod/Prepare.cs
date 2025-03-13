@@ -19,7 +19,6 @@ namespace DemoTemplateMethod
             "4. Hoàn thiện & trang trí",
             "5. Phục vụ & thưởng thức"
         };
-
         // UI Controls
         private Panel[] _stepPanels;
         private Label[] _stepLabels;

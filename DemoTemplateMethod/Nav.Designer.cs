@@ -28,8 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nav));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel2 = new Panel();
             panel9 = new Panel();
             btnServe = new Button();
@@ -45,8 +52,10 @@
             panel4 = new Panel();
             lblTitle = new Label();
             button1 = new Button();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            lblDescription = new Label();
+            btnNext = new Guna.UI2.WinForms.Guna2Button();
+            btnPrev = new Guna.UI2.WinForms.Guna2Button();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
             panel8.SuspendLayout();
@@ -55,7 +64,8 @@
             panel5.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            guna2Panel2.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -68,9 +78,9 @@
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(534, 0);
+            panel2.Location = new Point(743, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(250, 510);
+            panel2.Size = new Size(362, 502);
             panel2.TabIndex = 2;
             // 
             // panel9
@@ -79,7 +89,7 @@
             panel9.Dock = DockStyle.Top;
             panel9.Location = new Point(0, 411);
             panel9.Name = "panel9";
-            panel9.Size = new Size(250, 85);
+            panel9.Size = new Size(362, 85);
             panel9.TabIndex = 4;
             // 
             // btnServe
@@ -90,9 +100,9 @@
             btnServe.ForeColor = SystemColors.ButtonHighlight;
             btnServe.Location = new Point(-34, -9);
             btnServe.Name = "btnServe";
-            btnServe.Size = new Size(295, 112);
+            btnServe.Size = new Size(416, 112);
             btnServe.TabIndex = 0;
-            btnServe.Text = "Serve";
+            btnServe.Text = "Step 5 : Serve and enjoy";
             btnServe.UseVisualStyleBackColor = false;
             // 
             // panel8
@@ -101,7 +111,7 @@
             panel8.Dock = DockStyle.Top;
             panel8.Location = new Point(0, 326);
             panel8.Name = "panel8";
-            panel8.Size = new Size(250, 85);
+            panel8.Size = new Size(362, 85);
             panel8.TabIndex = 3;
             // 
             // btnDecorate
@@ -112,9 +122,9 @@
             btnDecorate.ForeColor = SystemColors.ButtonHighlight;
             btnDecorate.Location = new Point(-34, -9);
             btnDecorate.Name = "btnDecorate";
-            btnDecorate.Size = new Size(295, 112);
+            btnDecorate.Size = new Size(416, 112);
             btnDecorate.TabIndex = 0;
-            btnDecorate.Text = "Decorate";
+            btnDecorate.Text = "Step 4 : Finishing and decoration ";
             btnDecorate.UseVisualStyleBackColor = false;
             // 
             // panel7
@@ -123,7 +133,7 @@
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 241);
             panel7.Name = "panel7";
-            panel7.Size = new Size(250, 85);
+            panel7.Size = new Size(362, 85);
             panel7.TabIndex = 2;
             // 
             // btnAdd
@@ -134,9 +144,9 @@
             btnAdd.ForeColor = SystemColors.ButtonHighlight;
             btnAdd.Location = new Point(-34, -9);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(295, 112);
+            btnAdd.Size = new Size(416, 112);
             btnAdd.TabIndex = 0;
-            btnAdd.Text = "Add";
+            btnAdd.Text = "Step 3: Add custom components";
             btnAdd.UseVisualStyleBackColor = false;
             // 
             // panel6
@@ -145,7 +155,7 @@
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(0, 156);
             panel6.Name = "panel6";
-            panel6.Size = new Size(250, 85);
+            panel6.Size = new Size(362, 85);
             panel6.TabIndex = 1;
             // 
             // btnBrew
@@ -156,9 +166,9 @@
             btnBrew.ForeColor = SystemColors.ButtonHighlight;
             btnBrew.Location = new Point(-34, -9);
             btnBrew.Name = "btnBrew";
-            btnBrew.Size = new Size(295, 112);
+            btnBrew.Size = new Size(416, 112);
             btnBrew.TabIndex = 0;
-            btnBrew.Text = "Brew";
+            btnBrew.Text = "Step2 : Main ingredient preparation";
             btnBrew.UseVisualStyleBackColor = false;
             // 
             // panel5
@@ -167,7 +177,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 73);
             panel5.Name = "panel5";
-            panel5.Size = new Size(250, 83);
+            panel5.Size = new Size(362, 83);
             panel5.TabIndex = 0;
             // 
             // btnPrepare
@@ -177,9 +187,9 @@
             btnPrepare.ForeColor = Color.Transparent;
             btnPrepare.Location = new Point(-36, -12);
             btnPrepare.Name = "btnPrepare";
-            btnPrepare.Size = new Size(297, 105);
+            btnPrepare.Size = new Size(418, 105);
             btnPrepare.TabIndex = 1;
-            btnPrepare.Text = "Prepare";
+            btnPrepare.Text = "Step1 : Prepare ingredients and tools";
             btnPrepare.UseVisualStyleBackColor = true;
             // 
             // panel3
@@ -189,7 +199,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(250, 73);
+            panel3.Size = new Size(362, 73);
             panel3.TabIndex = 0;
             // 
             // panel4
@@ -198,7 +208,7 @@
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(250, 73);
+            panel4.Size = new Size(362, 73);
             panel4.TabIndex = 1;
             // 
             // lblTitle
@@ -207,7 +217,7 @@
             lblTitle.FlatStyle = FlatStyle.Flat;
             lblTitle.Font = new Font("Segoe UI Black", 15.7090912F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = SystemColors.ButtonHighlight;
-            lblTitle.Location = new Point(3, 17);
+            lblTitle.Location = new Point(62, 16);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(248, 32);
             lblTitle.TabIndex = 0;
@@ -225,39 +235,91 @@
             button1.Text = "Prepare";
             button1.UseVisualStyleBackColor = true;
             // 
-            // guna2Panel2
+            // btnNext
             // 
-            guna2Panel2.BackColor = Color.FromArgb(35, 40, 45);
-            guna2Panel2.Controls.Add(lblDescription);
-            guna2Panel2.CustomizableEdges = customizableEdges3;
-            guna2Panel2.Dock = DockStyle.Top;
-            guna2Panel2.Location = new Point(0, 0);
-            guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Panel2.Size = new Size(534, 73);
-            guna2Panel2.TabIndex = 3;
+            btnNext.Animated = true;
+            btnNext.BackColor = SystemColors.ControlLight;
+            btnNext.BorderColor = Color.FromArgb(35, 40, 45);
+            btnNext.BorderRadius = 10;
+            btnNext.BorderThickness = 5;
+            btnNext.CustomizableEdges = customizableEdges9;
+            btnNext.DisabledState.BorderColor = Color.DarkGray;
+            btnNext.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnNext.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnNext.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnNext.Dock = DockStyle.Right;
+            btnNext.FillColor = Color.White;
+            btnNext.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext.ForeColor = Color.Black;
+            btnNext.Location = new Point(637, 0);
+            btnNext.Name = "btnNext";
+            btnNext.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnNext.Size = new Size(106, 55);
+            btnNext.TabIndex = 2;
+            btnNext.Text = "Next";
             // 
-            // lblDescription
+            // btnPrev
             // 
-            lblDescription.AutoSize = true;
-            lblDescription.BackColor = Color.Transparent;
-            lblDescription.FlatStyle = FlatStyle.Flat;
-            lblDescription.Font = new Font("Segoe UI Black", 18.3272724F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDescription.ForeColor = Color.White;
-            lblDescription.Location = new Point(110, 11);
-            lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(292, 38);
-            lblDescription.TabIndex = 1;
-            lblDescription.Text = "Description Process";
+            btnPrev.Animated = true;
+            btnPrev.BackColor = SystemColors.ControlLight;
+            btnPrev.BorderColor = Color.Chocolate;
+            btnPrev.BorderRadius = 10;
+            btnPrev.BorderThickness = 5;
+            btnPrev.CustomizableEdges = customizableEdges11;
+            btnPrev.DisabledState.BorderColor = Color.DarkGray;
+            btnPrev.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnPrev.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnPrev.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPrev.Dock = DockStyle.Right;
+            btnPrev.FillColor = Color.White;
+            btnPrev.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPrev.ForeColor = Color.Black;
+            btnPrev.Location = new Point(531, 0);
+            btnPrev.Name = "btnPrev";
+            btnPrev.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnPrev.Size = new Size(106, 55);
+            btnPrev.TabIndex = 5;
+            btnPrev.Text = "Prev";
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.Controls.Add(btnPrev);
+            guna2Panel1.Controls.Add(btnNext);
+            guna2Panel1.CustomizableEdges = customizableEdges13;
+            guna2Panel1.Dock = DockStyle.Bottom;
+            guna2Panel1.FillColor = Color.Transparent;
+            guna2Panel1.ForeColor = Color.Transparent;
+            guna2Panel1.Location = new Point(0, 447);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Panel1.Size = new Size(743, 55);
+            guna2Panel1.TabIndex = 2;
+            // 
+            // pbImage
+            // 
+            pbImage.BackgroundImage = (Image)resources.GetObject("pbImage.BackgroundImage");
+            pbImage.BackgroundImageLayout = ImageLayout.Center;
+            pbImage.CustomizableEdges = customizableEdges15;
+            pbImage.Dock = DockStyle.Fill;
+            pbImage.FillColor = Color.Transparent;
+            pbImage.ImageRotate = 0F;
+            pbImage.Location = new Point(0, 0);
+            pbImage.Name = "pbImage";
+            pbImage.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            pbImage.Size = new Size(743, 447);
+            pbImage.TabIndex = 3;
+            pbImage.TabStop = false;
             // 
             // Nav
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(guna2Panel2);
+            Controls.Add(pbImage);
+            Controls.Add(guna2Panel1);
             Controls.Add(panel2);
             Name = "Nav";
-            Size = new Size(784, 510);
+            Size = new Size(1105, 502);
             Load += Nav_Load;
             panel2.ResumeLayout(false);
             panel9.ResumeLayout(false);
@@ -268,8 +330,8 @@
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            guna2Panel2.ResumeLayout(false);
-            guna2Panel2.PerformLayout();
+            guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbImage).EndInit();
             ResumeLayout(false);
         }
 
@@ -290,7 +352,9 @@
         private Panel panel4;
         private Label lblTitle;
         private Button button1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Label lblDescription;
+        private Guna.UI2.WinForms.Guna2Button btnNext;
+        private Guna.UI2.WinForms.Guna2Button btnPrev;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2PictureBox pbImage;
     }
 }

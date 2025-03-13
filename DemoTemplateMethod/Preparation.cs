@@ -36,5 +36,10 @@ namespace DemoTemplateMethod
         {
 
         }
+
+        private void nav2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
