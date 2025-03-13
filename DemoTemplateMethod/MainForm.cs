@@ -148,7 +148,7 @@ namespace DemoTemplateMethod
             {
                 int beverageIndex = (int)((Button)sender).Tag;
                 // Launch the PreparationForm
-                PreparationForm preparationForm = new PreparationForm(beverages[beverageIndex]);
+                Prepare preparationForm = new Prepare(beverages[beverageIndex]);
                 preparationForm.ShowDialog();
             };
 
