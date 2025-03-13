@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoTemplateMethod.Beverages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace DemoTemplateMethod
 {
     public partial class Preparation : Form
     {
-        public Preparation()
+        private Beverage beverage;
+        public Preparation(Beverage beverage)
         {
             InitializeComponent();
+            this.beverage = beverage;
         }
 
         private void label1_Click(object sender, EventArgs e)
