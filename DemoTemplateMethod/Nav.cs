@@ -31,6 +31,7 @@ namespace DemoTemplateMethod
             {
                 if (ctrl is Button btn)
                 {
+                    btn.Tag = btn.BackColor;
                     btn.MouseEnter += Button_MouseEnter;
                     btn.MouseLeave += Button_MouseLeave;
                 }
@@ -47,22 +48,22 @@ namespace DemoTemplateMethod
         }
         private void Button_MouseEnter(object sender, EventArgs e)
         {
-            ((Button)sender).BackColor = Color.FromArgb(242, 178, 140);
+            ((Button)sender).BackColor = Color.FromArgb(35,40,45);
         }
 
         // Xử lý khi rời khỏi button
         private void Button_MouseLeave(object sender, EventArgs e)
         {
-            ((Button)sender).BackColor = Color.FromArgb(35, 40, 45);
+            Button btn = (Button)sender;
+            btn.BackColor = (Color)btn.Tag; 
         }
         private void LoadGif()
         {
-            // Tạo PictureBox chứa GIF
             gifBox = new PictureBox
             {
                 SizeMode = PictureBoxSizeMode.StretchImage,
-                Dock = DockStyle.Fill, // Chỉnh Dock nếu cần
-                Image = Image.FromFile("C:/Users/ToanKhoa/Downloads/giphy.gif") // Đặt đường dẫn ảnh GIF
+                Dock = DockStyle.Fill, 
+                Image = Image.FromFile("C:/Users/ToanKhoa/Downloads/giphy.gif") 
             };
 
             // Thêm vào UserControl

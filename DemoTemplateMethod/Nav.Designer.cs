@@ -78,119 +78,126 @@
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(743, 0);
+            panel2.Location = new Point(552, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(362, 502);
+            panel2.Size = new Size(553, 502);
             panel2.TabIndex = 2;
             // 
             // panel9
             // 
+            panel9.BorderStyle = BorderStyle.FixedSingle;
             panel9.Controls.Add(btnServe);
             panel9.Dock = DockStyle.Top;
             panel9.Location = new Point(0, 411);
             panel9.Name = "panel9";
-            panel9.Size = new Size(362, 85);
+            panel9.Size = new Size(553, 85);
             panel9.TabIndex = 4;
             // 
             // btnServe
             // 
-            btnServe.BackColor = Color.Transparent;
+            btnServe.BackColor = Color.Teal;
             btnServe.FlatStyle = FlatStyle.Flat;
             btnServe.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnServe.ForeColor = SystemColors.ButtonHighlight;
             btnServe.Location = new Point(-34, -9);
             btnServe.Name = "btnServe";
-            btnServe.Size = new Size(416, 112);
+            btnServe.Size = new Size(613, 112);
             btnServe.TabIndex = 0;
             btnServe.Text = "Step 5 : Serve and enjoy";
             btnServe.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
+            panel8.BorderStyle = BorderStyle.FixedSingle;
             panel8.Controls.Add(btnDecorate);
             panel8.Dock = DockStyle.Top;
             panel8.Location = new Point(0, 326);
             panel8.Name = "panel8";
-            panel8.Size = new Size(362, 85);
+            panel8.Size = new Size(553, 85);
             panel8.TabIndex = 3;
             // 
             // btnDecorate
             // 
-            btnDecorate.BackColor = Color.Transparent;
+            btnDecorate.BackColor = Color.MediumSpringGreen;
             btnDecorate.FlatStyle = FlatStyle.Flat;
             btnDecorate.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDecorate.ForeColor = SystemColors.ButtonHighlight;
             btnDecorate.Location = new Point(-34, -9);
             btnDecorate.Name = "btnDecorate";
-            btnDecorate.Size = new Size(416, 112);
+            btnDecorate.Size = new Size(613, 112);
             btnDecorate.TabIndex = 0;
             btnDecorate.Text = "Step 4 : Finishing and decoration ";
             btnDecorate.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
+            panel7.BorderStyle = BorderStyle.FixedSingle;
             panel7.Controls.Add(btnAdd);
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 241);
             panel7.Name = "panel7";
-            panel7.Size = new Size(362, 85);
+            panel7.Size = new Size(553, 85);
             panel7.TabIndex = 2;
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.Transparent;
+            btnAdd.BackColor = Color.Green;
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAdd.ForeColor = SystemColors.ButtonHighlight;
             btnAdd.Location = new Point(-34, -9);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(416, 112);
+            btnAdd.Size = new Size(613, 112);
             btnAdd.TabIndex = 0;
             btnAdd.Text = "Step 3: Add custom components";
             btnAdd.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
+            panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Controls.Add(btnBrew);
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(0, 156);
             panel6.Name = "panel6";
-            panel6.Size = new Size(362, 85);
+            panel6.Size = new Size(553, 85);
             panel6.TabIndex = 1;
             // 
             // btnBrew
             // 
-            btnBrew.BackColor = Color.Transparent;
+            btnBrew.BackColor = Color.MediumSeaGreen;
             btnBrew.FlatStyle = FlatStyle.Flat;
             btnBrew.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBrew.ForeColor = Color.Transparent;
             btnBrew.Location = new Point(-34, -9);
             btnBrew.Name = "btnBrew";
-            btnBrew.Size = new Size(416, 112);
+            btnBrew.Size = new Size(613, 112);
             btnBrew.TabIndex = 0;
             btnBrew.Text = "Step2 : Main ingredient preparation";
-            btnBrew.UseVisualStyleBackColor = true;
+            btnBrew.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
+            panel5.BorderStyle = BorderStyle.FixedSingle;
             panel5.Controls.Add(btnPrepare);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 73);
             panel5.Name = "panel5";
-            panel5.Size = new Size(362, 83);
+            panel5.Padding = new Padding(0, 10, 0, 0);
+            panel5.Size = new Size(553, 83);
             panel5.TabIndex = 0;
             // 
             // btnPrepare
             // 
+            btnPrepare.BackColor = Color.YellowGreen;
             btnPrepare.FlatStyle = FlatStyle.Flat;
             btnPrepare.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPrepare.ForeColor = Color.Transparent;
             btnPrepare.Location = new Point(-36, -12);
             btnPrepare.Name = "btnPrepare";
-            btnPrepare.Size = new Size(418, 105);
+            btnPrepare.Size = new Size(615, 105);
             btnPrepare.TabIndex = 1;
             btnPrepare.Text = "Step1 : Prepare ingredients and tools";
-            btnPrepare.UseVisualStyleBackColor = true;
+            btnPrepare.UseVisualStyleBackColor = false;
             btnPrepare.Click += btnPrepare_Click;
             // 
             // panel3
@@ -200,7 +207,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(362, 73);
+            panel3.Size = new Size(553, 73);
             panel3.TabIndex = 0;
             // 
             // panel4
@@ -209,7 +216,7 @@
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(362, 73);
+            panel4.Size = new Size(553, 73);
             panel4.TabIndex = 1;
             // 
             // lblTitle
@@ -218,7 +225,7 @@
             lblTitle.FlatStyle = FlatStyle.Flat;
             lblTitle.Font = new Font("Segoe UI Black", 15.7090912F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = SystemColors.ButtonHighlight;
-            lblTitle.Location = new Point(62, 16);
+            lblTitle.Location = new Point(144, 16);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(248, 32);
             lblTitle.TabIndex = 0;
@@ -252,7 +259,7 @@
             btnNext.FillColor = Color.White;
             btnNext.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnNext.ForeColor = Color.Black;
-            btnNext.Location = new Point(637, 0);
+            btnNext.Location = new Point(446, 0);
             btnNext.Name = "btnNext";
             btnNext.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnNext.Size = new Size(106, 55);
@@ -275,7 +282,7 @@
             btnPrev.FillColor = Color.White;
             btnPrev.Font = new Font("Segoe UI", 9.163636F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPrev.ForeColor = Color.Black;
-            btnPrev.Location = new Point(531, 0);
+            btnPrev.Location = new Point(340, 0);
             btnPrev.Name = "btnPrev";
             btnPrev.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnPrev.Size = new Size(106, 55);
@@ -294,7 +301,7 @@
             guna2Panel1.Location = new Point(0, 447);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel1.Size = new Size(743, 55);
+            guna2Panel1.Size = new Size(552, 55);
             guna2Panel1.TabIndex = 2;
             // 
             // pbImage
@@ -308,10 +315,9 @@
             pbImage.Location = new Point(0, 0);
             pbImage.Name = "pbImage";
             pbImage.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            pbImage.Size = new Size(743, 447);
+            pbImage.Size = new Size(552, 447);
             pbImage.TabIndex = 3;
             pbImage.TabStop = false;
-
             // 
             // Nav
             // 
