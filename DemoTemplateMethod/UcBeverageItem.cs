@@ -39,7 +39,7 @@ namespace DemoTemplateMethod
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Preparation preparationForm = new Preparation(beverage);
+            FormPrepare preparationForm = new FormPrepare(beverage);
             preparationForm.ShowDialog();
         }
 

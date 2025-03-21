@@ -33,7 +33,6 @@ namespace DemoTemplateMethod
         /// </summary>
         private void InitializeComponent()
         {
-            this.StartPosition = FormStartPosition.CenterScreen;
             lblBeverage = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             SuspendLayout();
@@ -44,7 +43,7 @@ namespace DemoTemplateMethod
             lblBeverage.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBeverage.Location = new Point(336, 26);
             lblBeverage.Name = "lblBeverage";
-            lblBeverage.Size = new Size(344, 42);
+            lblBeverage.Size = new Size(295, 37);
             lblBeverage.TabIndex = 0;
             lblBeverage.Text = "BEVERAGE MENU";
             // 
@@ -53,19 +52,20 @@ namespace DemoTemplateMethod
             flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
             flowLayoutPanel1.Location = new Point(31, 80);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(937, 776);
+            flowLayoutPanel1.Size = new Size(937, 813);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // MainInterface
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 178, 140);
-            ClientSize = new Size(1000, 875);
+            ClientSize = new Size(1000, 932);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(lblBeverage);
             Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "MainInterface";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainInterface";
             Load += MainInterface_Load;
             ResumeLayout(false);

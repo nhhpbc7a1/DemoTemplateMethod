@@ -39,7 +39,7 @@ namespace DemoTemplateMethod
 
             stepNumberLabel.Text = $"Step {currentStep + 1}/{beverage.StepDescriptions.Count}";
 
-            List<string> stepImagePaths = beverage.StepImages;
+            List<string> stepImagePaths = beverage.StepImagePaths;
 
 
             try
@@ -47,7 +47,7 @@ namespace DemoTemplateMethod
                 //Lets try and set the image to what we hope to find based on name.
                 // stepImage.Image = Image.FromFile(stepImage);
                 stepDescriptionLabel.Text = beverage.StepDescriptions[currentStep];
-                stepImage.Image = Image.FromFile(beverage.StepImages[currentStep]);
+                stepImage.Image = Image.FromFile(beverage.StepImagePaths[currentStep]);
 
             }
             catch (Exception ex)

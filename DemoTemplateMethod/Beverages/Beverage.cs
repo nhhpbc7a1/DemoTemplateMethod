@@ -10,13 +10,13 @@ namespace DemoTemplateMethod.Beverages
     {
         public int currentStep = 0;
         public string CurrentStepDescription = "";
-        public string CurrentStepImage = "";
+        public string CurrentStepImagePath = "";
         public string Name { get; protected set; }
         public string Description { get; protected set; }
         public string MenuImagePath { get; protected set; }
 
         public List<string> StepDescriptions { get; private set; } = new List<string>();
-        public List<string> StepImages { get; private set; } = new List<string>();
+        public List<string> StepImagePaths { get; private set; } = new List<string>();
 
 
         // Template method
@@ -43,7 +43,7 @@ namespace DemoTemplateMethod.Beverages
         private void AddStepDescriptionAndImage()
         {
             StepDescriptions.Add(CurrentStepDescription);
-            StepImages.Add(CurrentStepImage);
+            StepImagePaths.Add(CurrentStepImagePath);
         }
 
         protected abstract void PrepareIngredients();

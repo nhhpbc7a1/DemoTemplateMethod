@@ -19,32 +19,32 @@ namespace DemoTemplateMethod.Beverages
         protected override void PrepareIngredients()
         {
             CurrentStepDescription = "Prepare: Fresh fruits (e.g., oranges, apples, berries), juicer, glass";
-            CurrentStepImage = ImagePathHelper.GetImagePath("juice_step1.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("juice_step1.jpg");
         }
 
         protected override void BrewMainIngredient()
         {
             //No brewing required for juice
             CurrentStepDescription = "No brewing required";
-            CurrentStepImage = ImagePathHelper.GetImagePath("blank_image.jpg"); // Use a blank image or a suitable placeholder
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("blank_image.jpg"); // Use a blank image or a suitable placeholder
         }
 
         protected override void AddCustomIngredients()
         {
             CurrentStepDescription = "Juice the fruits: Feed the fruits into the juicer";
-            CurrentStepImage = ImagePathHelper.GetImagePath("juice_step2.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("juice_step2.jpg");
         }
 
         protected override void FinishAndDecorate()
         {
             CurrentStepDescription = "Strain (optional): Strain the juice to remove pulp if desired";
-            CurrentStepImage = ImagePathHelper.GetImagePath("juice_step3.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("juice_step3.jpg");
         }
 
         protected override void Serve()
         {
             CurrentStepDescription = "Serve: Pour into a glass and enjoy immediately! Add ice if desired.";
-            CurrentStepImage = ImagePathHelper.GetImagePath("juice_step4.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("juice_step4.jpg");
         }
 
     }

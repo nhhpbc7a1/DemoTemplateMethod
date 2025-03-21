@@ -15,35 +15,35 @@ namespace DemoTemplateMethod.Beverages
         protected override void PrepareIngredients()
         {
             CurrentStepDescription = "Prepare: Fresh strawberries, yogurt, honey, ice, and blender";
-            CurrentStepImage = ImagePathHelper.GetImagePath("smoothie_step1.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("smoothie_step1.jpg");
             // Thực hiện logic chuẩn bị nguyên liệu
         }
 
         protected override void BrewMainIngredient()
         {
             CurrentStepDescription = "Blend ingredients: Add strawberries and ice to the blender and blend";
-            CurrentStepImage = ImagePathHelper.GetImagePath("smoothie_step2.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("smoothie_step2.jpg");
             // Thực hiện logic pha trà
         }
 
         protected override void AddCustomIngredients()
         {
             CurrentStepDescription = "Add ingredients: Add yogurt and honey, blend lightly";
-            CurrentStepImage = ImagePathHelper.GetImagePath("smoothie_step3.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("smoothie_step3.jpg");
             // Thực hiện logic thêm nguyên liệu
         }
 
         protected override void FinishAndDecorate()
         {
             CurrentStepDescription = "Finish: Pour the mixture into a glass, decorate with a strawberry slice";
-            CurrentStepImage = ImagePathHelper.GetImagePath("smoothie_step4.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("smoothie_step4.jpg");
             // Thực hiện logic hoàn thiện
         }
 
         protected override void Serve()
         {
             CurrentStepDescription = "Serve: Add a straw and enjoy immediately";
-            CurrentStepImage = ImagePathHelper.GetImagePath("smoothie_step5.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("smoothie_step5.jpg");
             // Thực hiện logic phục vụ
         }
 

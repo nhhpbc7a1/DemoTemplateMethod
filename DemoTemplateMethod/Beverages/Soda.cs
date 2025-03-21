@@ -19,32 +19,32 @@ namespace DemoTemplateMethod.Beverages
         protected override void PrepareIngredients()
         {
             CurrentStepDescription = "Prepare: Soda water, flavored syrup (e.g., raspberry, lemon), ice";
-            CurrentStepImage = ImagePathHelper.GetImagePath("soda_step1.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("soda_step1.jpg");
         }
 
         protected override void BrewMainIngredient()
         {
             // No brewing needed for soda
             CurrentStepDescription = "No brewing required";
-            CurrentStepImage = ImagePathHelper.GetImagePath("blank_image.jpg"); // Use a blank image or a suitable placeholder
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("blank_image.jpg"); // Use a blank image or a suitable placeholder
         }
 
         protected override void AddCustomIngredients()
         {
             CurrentStepDescription = "Add flavor: Pour the flavored syrup into the glass";
-            CurrentStepImage = ImagePathHelper.GetImagePath("soda_step2.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("soda_step2.jpg");
         }
 
         protected override void FinishAndDecorate()
         {
             CurrentStepDescription = "Add soda water: Gently pour soda water into the glass to mix with syrup";
-            CurrentStepImage = ImagePathHelper.GetImagePath("soda_step3.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("soda_step3.jpg");
         }
 
         protected override void Serve()
         {
             CurrentStepDescription = "Serve: Add ice cubes and garnish with a lemon slice. Enjoy!";
-            CurrentStepImage = ImagePathHelper.GetImagePath("soda_step4.jpg");
+            CurrentStepImagePath = ImagePathHelper.GetImagePath("soda_step4.jpg");
         }
     }
 }
