@@ -56,7 +56,7 @@ namespace DemoTemplateMethod
             panelImage.Location = new Point(0, 0);
             panelImage.Name = "panelImage";
             panelImage.Padding = new Padding(20);
-            panelImage.Size = new Size(500, 932);
+            panelImage.Size = new Size(500, 781);
             panelImage.TabIndex = 0;
             // 
             // pictureBoxStep
@@ -65,7 +65,7 @@ namespace DemoTemplateMethod
             pictureBoxStep.Dock = DockStyle.Fill;
             pictureBoxStep.Location = new Point(20, 20);
             pictureBoxStep.Name = "pictureBoxStep";
-            pictureBoxStep.Size = new Size(460, 892);
+            pictureBoxStep.Size = new Size(460, 741);
             pictureBoxStep.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxStep.TabIndex = 0;
             pictureBoxStep.TabStop = false;
@@ -78,7 +78,7 @@ namespace DemoTemplateMethod
             panelSteps.Location = new Point(500, 60);
             panelSteps.Name = "panelSteps";
             panelSteps.Padding = new Padding(20);
-            panelSteps.Size = new Size(500, 812);
+            panelSteps.Size = new Size(500, 661);
             panelSteps.TabIndex = 1;
             // 
             // timer
@@ -105,7 +105,7 @@ namespace DemoTemplateMethod
             panelNavigation.Controls.Add(btnPrevious);
             panelNavigation.Controls.Add(btnStartStop);
             panelNavigation.Dock = DockStyle.Bottom;
-            panelNavigation.Location = new Point(500, 872);
+            panelNavigation.Location = new Point(500, 721);
             panelNavigation.Name = "panelNavigation";
             panelNavigation.Size = new Size(500, 60);
             panelNavigation.TabIndex = 3;
@@ -116,7 +116,7 @@ namespace DemoTemplateMethod
             btnNext.BackColor = Color.FromArgb(0, 123, 255);
             btnNext.FlatAppearance.BorderSize = 0;
             btnNext.FlatStyle = FlatStyle.Flat;
-            btnNext.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext.Font = new Font("Segoe UI Semibold", 13.75F, FontStyle.Bold);
             btnNext.ForeColor = Color.White;
             btnNext.Location = new Point(380, 12);
             btnNext.Name = "btnNext";
@@ -131,11 +131,11 @@ namespace DemoTemplateMethod
             btnPrevious.BackColor = Color.FromArgb(108, 117, 125);
             btnPrevious.FlatAppearance.BorderSize = 0;
             btnPrevious.FlatStyle = FlatStyle.Flat;
-            btnPrevious.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPrevious.Font = new Font("Segoe UI Semibold", 13.75F, FontStyle.Bold);
             btnPrevious.ForeColor = Color.White;
             btnPrevious.Location = new Point(20, 12);
             btnPrevious.Name = "btnPrevious";
-            btnPrevious.Size = new Size(100, 36);
+            btnPrevious.Size = new Size(100, 35);
             btnPrevious.TabIndex = 0;
             btnPrevious.Text = "Previous";
             btnPrevious.UseVisualStyleBackColor = false;
@@ -147,7 +147,7 @@ namespace DemoTemplateMethod
             btnStartStop.BackColor = Color.FromArgb(40, 167, 69);
             btnStartStop.FlatAppearance.BorderSize = 0;
             btnStartStop.FlatStyle = FlatStyle.Flat;
-            btnStartStop.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnStartStop.Font = new Font("Segoe UI Semibold", 13.75F, FontStyle.Bold);
             btnStartStop.ForeColor = Color.White;
             btnStartStop.Location = new Point(200, 12);
             btnStartStop.Name = "btnStartStop";
@@ -161,7 +161,7 @@ namespace DemoTemplateMethod
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 932);
+            ClientSize = new Size(1000, 781);
             Controls.Add(panelSteps);
             Controls.Add(panelNavigation);
             Controls.Add(lblTitle);

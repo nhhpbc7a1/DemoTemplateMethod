@@ -33,48 +33,52 @@ namespace DemoTemplateMethod
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblBeverage = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
             SuspendLayout();
             // 
             // lblBeverage
             // 
-            lblBeverage.AutoSize = true;
+            lblBeverage.Dock = DockStyle.Top;
             lblBeverage.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblBeverage.Location = new Point(336, 26);
+            lblBeverage.Location = new Point(0, 0);
             lblBeverage.Name = "lblBeverage";
-            lblBeverage.Size = new Size(295, 37);
+            lblBeverage.Size = new Size(1150, 77);
             lblBeverage.TabIndex = 0;
             lblBeverage.Text = "BEVERAGE MENU";
+            lblBeverage.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
             flowLayoutPanel1.Location = new Point(31, 80);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(937, 813);
+            flowLayoutPanel1.Size = new Size(1085, 950);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // MainInterface
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 178, 140);
-            ClientSize = new Size(1000, 932);
+            ClientSize = new Size(1150, 905);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(lblBeverage);
             Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "MainInterface";
+            SizeGripStyle = SizeGripStyle.Show;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MainInterface";
             Load += MainInterface_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label lblBeverage;
         private FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

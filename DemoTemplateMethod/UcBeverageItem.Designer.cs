@@ -45,9 +45,10 @@
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(15, 12);
+            panel1.Location = new Point(33, 16);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(264, 360);
+            panel1.Size = new Size(285, 446);
             panel1.TabIndex = 1;
             // 
             // panel2
@@ -56,9 +57,10 @@
             panel2.Controls.Add(lblDescription);
             panel2.Controls.Add(button1);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 211);
+            panel2.Location = new Point(0, 248);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(262, 147);
+            panel2.Size = new Size(283, 196);
             panel2.TabIndex = 7;
             // 
             // lblName
@@ -68,7 +70,7 @@
             lblName.ForeColor = Color.FromArgb(242, 178, 140);
             lblName.Location = new Point(0, 0);
             lblName.Name = "lblName";
-            lblName.Size = new Size(262, 30);
+            lblName.Size = new Size(283, 40);
             lblName.TabIndex = 4;
             lblName.Text = "Mochi MilkTea";
             lblName.TextAlign = ContentAlignment.TopCenter;
@@ -77,9 +79,9 @@
             // 
             lblDescription.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDescription.ForeColor = Color.FromArgb(251, 210, 136);
-            lblDescription.Location = new Point(3, 30);
+            lblDescription.Location = new Point(3, 40);
             lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(240, 51);
+            lblDescription.Size = new Size(274, 68);
             lblDescription.TabIndex = 6;
             lblDescription.Text = "Mochi milktea  is the best in the world, everyone loves it";
             lblDescription.TextAlign = ContentAlignment.TopCenter;
@@ -89,9 +91,10 @@
             button1.BackColor = Color.FromArgb(64, 64, 64);
             button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(54, 87);
+            button1.Location = new Point(62, 116);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(145, 48);
+            button1.Size = new Size(166, 64);
             button1.TabIndex = 3;
             button1.Text = "Prepare";
             button1.UseVisualStyleBackColor = false;
@@ -101,20 +104,22 @@
             // 
             pictureBox1.ErrorImage = null;
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(21, 13);
+            pictureBox1.Location = new Point(39, 16);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(222, 181);
+            pictureBox1.Size = new Size(201, 203);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // UcBeverageItem
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "UcBeverageItem";
-            Size = new Size(292, 379);
+            Size = new Size(348, 476);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

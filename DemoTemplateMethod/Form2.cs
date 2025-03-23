@@ -23,11 +23,11 @@ namespace DemoTemplateMethod
             List<Beverage> list = new List<Beverage>()
             {
                 new Coffee(),
-                new Tea(),
-                new Smoothie(),
-                new Soda(),
-                new Juice(),
-                new Matcha(),
+                new SweetTea(),
+                new StrawberryLemonade(),
+                new GreenSmoothie(),
+                new FrozenHotChocolate(),
+                new MatchaLatte(),
             };
 
             LoadBeverages(list); // Call LoadBeverages here.

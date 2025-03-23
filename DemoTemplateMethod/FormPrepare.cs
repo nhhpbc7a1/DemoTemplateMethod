@@ -18,11 +18,11 @@ namespace DemoTemplateMethod
         // Các tiêu đề bước
         private static readonly string[] stepTitles = new string[]
         {
-            "1. Prepare Ingredients",
-            "2. Brew Main Ingredient",
-            "3. Add Custom Ingredients",
-            "4. Finish And Decorate",
-            "5. Serve"
+            "I. Prepare Ingredients",
+            "II. Brew Main Ingredient",
+            "III. Add Custom Ingredients",
+            "IV. Finish And Decorate",
+            "V. Serve"
         };
 
         public FormPrepare(Beverage beverage)
